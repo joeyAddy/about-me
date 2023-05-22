@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Joseph John</title>
+</head>
+<body>
+    <div id="loader" ></div>
+    <div id="main" class="animate-bottom none">
+        <nav>
+            <div>
+                <box-icon class="icon" name='menu'></box-icon>
+                <h3>MENU</h3>
+            </div>
+            <div>
+                <h2>JOEYDEVS</h2>
+            </div>
+            <div>
+                <a href="#">CONTACT</a>
+                <box-icon name='envelope'></box-icon>
+            </div>
+        </nav>
+        
+        <section id="hero">
+            <div class="top">
+                <h1>Hello, I am Joseph John</h1>
+                <p>I am a MERN Stack developer, Professional writer,
+                    <br> Poet and Msician, creative crocheter and business guru
+                </p>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div>
+                        <h1>Soon To Be Graduate</h1>
+                        <p>Studying in Kaduna state university for a Computer Science Degree</p>
+                    </div>
+                    <span>
+                        <p>J</p>
+                        <p>D</p>
+                    </span>
+                    <p>Love Music, reading <br> basically anything challenging</p>
+                </div>
+                <div class="center">
+                    <!-- <img src="assets/1684770204808.png" alt=""> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="img"></div>
+                            <div class="img"></div>
+                            <div class="img"></div>
+                        </div>
+                        <div class="row">
+                            <div class="img"></div>
+                            <div class="img"></div>
+                            <div class="img"></div>
+                        </div>
+                        <div class="row">
+                            <div class="img"></div>
+                            <div class="img"></div>
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1>Naturally curious discoverer</h1>
+                    <h4>Worked with</h4>
+                    <div class="worked">
+                        <img src="assets/young-african-american-guy-laughing-photo.jpg" alt="">
+                        <img src="assets/nigerian-girls.webp" alt="">
+                        <img src="/assets/photo-1612214070475-1e73f478188c.jfif" alt="">
+                        <p>10+ <br> more</p>
+                    </div>
+                    <div>
+                        <p>I have an artistic sense of awareness
+                            with great humor and keen susceptibility to learn
+                            as much as I can.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+ 
+    <script>
+      function onReady(callback) {
+            var intervalId = window.setInterval(function () {
+                if (document.getElementsByTagName('body')[0] !== undefined) {
+                    window.clearInterval(intervalId);
+                    callback.call(this);
+                }
+            }, 1000);
+        }
+
+        function setVisible(selector, visible) {
+            document.querySelector(selector).style.display = visible ? 'block' : 'none';
+        }
+
+        onReady(function () {
+            setVisible('#main', true);
+            setVisible('#loader', false);
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
